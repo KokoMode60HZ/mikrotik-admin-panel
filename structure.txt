@@ -1,0 +1,32 @@
+mikrotik-admin-panel/
+├── src/
+│   ├── config/           # Konfigurasi aplikasi
+│   │   └── database.js
+│   ├── controllers/      # Logic bisnis
+│   ├── middleware/       # Middleware
+│   │   ├── auth.js
+│   │   └── errorHandler.js
+│   ├── routes/          # Route API
+│   │   └── index.js
+│   ├── models/          # Model database
+│   ├── services/        # Service layer
+│   └── utils/           # Helper functions
+├── public/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── assets/
+├── views/               # Template views
+│   ├── layouts/
+│   ├── partials/
+│   └── pages/
+├── tests/              # Unit tests
+│   ├── integration/
+│   └── unit/
+├── logs/              # Log files
+├── docs/              # Dokumentasi
+├── .env
+├── .gitignore
+└── package.json
+├── package.json
+└── README.md

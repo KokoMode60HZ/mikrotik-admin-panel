@@ -1,0 +1,24 @@
+mikrotik-admin-panel/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   └── Middleware/
+│   ├── Models/
+│   └── Providers/
+├── config/
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── public/
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── resources/
+│   ├── views/
+│   │   └── layouts/
+│   ├── js/
+│   └── css/
+├── routes/
+├── storage/
+├── tests/
+└── vendor/
