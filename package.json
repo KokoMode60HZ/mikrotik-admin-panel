@@ -1,20 +1,18 @@
 {
   "name": "mikrotik-admin-panel",
   "version": "1.0.0",
-  "description": "Mikrotik Admin Panel",
-  "main": "src/index.js",
+  "description": "Mikrotik Admin Panel using Node.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "test": "jest"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "dependencies": {
-    "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1"
+    "ejs": "^3.1.6",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "jest": "^27.0.6",
     "nodemon": "^2.0.12"
   }
 }

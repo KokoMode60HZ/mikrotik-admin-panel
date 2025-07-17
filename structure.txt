@@ -1,32 +1,38 @@
 mikrotik-admin-panel/
 ├── src/
-│   ├── config/           # Konfigurasi aplikasi
-│   │   └── database.js
+│   ├── config/           # Konfigurasi aplikasi dan mikrotik
+│   │   ├── database.js
+│   │   └── mikrotik.js
 │   ├── controllers/      # Logic bisnis
-│   ├── middleware/       # Middleware
+│   │   └── adminController.js
+│   ├── middleware/       # Middleware (sesuai struktur Node.js)
 │   │   ├── auth.js
 │   │   └── errorHandler.js
 │   ├── routes/          # Route API
 │   │   └── index.js
 │   ├── models/          # Model database
 │   ├── services/        # Service layer
+│   │   └── mikrotikService.js
 │   └── utils/           # Helper functions
-├── public/
+│       └── mikrotikApi.js
+├── public/              # Static files
 │   ├── css/
 │   ├── js/
 │   ├── images/
 │   └── assets/
-├── views/               # Template views
+├── views/               # Template views (EJS)
 │   ├── layouts/
+│   │   └── main.ejs
 │   ├── partials/
+│   │   ├── header.ejs
+│   │   └── sidebar.ejs
 │   └── pages/
-├── tests/              # Unit tests
-│   ├── integration/
-│   └── unit/
-├── logs/              # Log files
-├── docs/              # Dokumentasi
+│       ├── dashboard.ejs
+│       └── login.ejs
+├── tests/              
+├── logs/              
+├── docs/              
 ├── .env
 ├── .gitignore
-└── package.json
 ├── package.json
 └── README.md
