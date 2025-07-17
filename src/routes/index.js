@@ -1,14 +1,20 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const AdminController = require('../controllers/adminController');
+const AdminController = require("../controllers/adminController");
 
 const adminController = new AdminController();
 
 function setRoutes(app) {
-    router.get('/dashboard', adminController.getDashboard.bind(adminController));
-    // Add more routes as needed
+  router.get("/dashboard", adminController.getDashboard.bind(adminController));
+  // Add more routes as needed
 
-    app.use('/admin', router);
+  app.use("/admin", router);
+}
+function setAdd(app) {
+  router.get("/dashboard", adminController.getDashboard.bind(adminController));
+  // Add more routes as needed
+
+  app.use("/admin", router);
 }
 
 module.exports = setRoutes;
