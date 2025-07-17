@@ -10,11 +10,5 @@ function setRoutes(app) {
 
   app.use("/admin", router);
 }
-function setAdd(app) {
-  router.get("/dashboard", adminController.getDashboard.bind(adminController));
-  // Add more routes as needed
-
-  app.use("/admin", router);
-}
 
 module.exports = setRoutes;
