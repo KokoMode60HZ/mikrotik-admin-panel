@@ -1,38 +1,23 @@
-mikrotik-admin-panel/
-├── src/
-│   ├── config/           # Konfigurasi aplikasi dan mikrotik
-│   │   ├── database.js
-│   │   └── mikrotik.js
-│   ├── controllers/      # Logic bisnis
-│   │   └── adminController.js
-│   ├── middleware/       # Middleware (sesuai struktur Node.js)
-│   │   ├── auth.js
-│   │   └── errorHandler.js
-│   ├── routes/          # Route API
-│   │   └── index.js
-│   ├── models/          # Model database
-│   ├── services/        # Service layer
-│   │   └── mikrotikService.js
-│   └── utils/           # Helper functions
-│       └── mikrotikApi.js
-├── public/              # Static files
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│   └── assets/
-├── views/               # Template views (EJS)
-│   ├── layouts/
-│   │   └── main.ejs
-│   ├── partials/
-│   │   ├── header.ejs
-│   │   └── sidebar.ejs
-│   └── pages/
-│       ├── dashboard.ejs
-│       └── login.ejs
-├── tests/              
-├── logs/              
-├── docs/              
-├── .env
-├── .gitignore
-├── package.json
-└── README.md
+Struktur Folder Mikrotik Admin Panel (Express.js)
+
+/
+├── public/                # Berisi file statis yang diakses langsung oleh browser (HTML, CSS, JS, gambar)
+│   ├── css/               # File-file stylesheet (tampilan)
+│   ├── js/                # File-file JavaScript untuk interaksi di frontend
+│   └── img/               # Gambar/icon yang digunakan di website
+├── src/                   # Source code utama aplikasi Express.js
+│   ├── config/            # Konfigurasi aplikasi, misal koneksi Supabase, pengaturan environment
+│   ├── controllers/       # Logic utama untuk menangani request dan response tiap fitur/route
+│   ├── middleware/        # Middleware Express, misal autentikasi, logging, dsb
+│   ├── routes/            # Definisi endpoint/route aplikasi (misal: /user, /login)
+│   ├── utils/             # Helper atau fungsi utilitas yang membantu controller/middleware
+│   ├── views/             # Template EJS untuk tampilan dinamis
+│   │   ├── layouts/       # Template layout utama (misal: main layout)
+│   │   ├── partials/      # Komponen partial (misal: header, footer, sidebar)
+│   │   └── dashboard.ejs  # Contoh halaman dashboard utama
+│   └── app.js             # Entry point utama aplikasi Express.js
+├── .env                   # File environment variable (port, supabase url/key, dsb)
+├── package.json           # Konfigurasi npm & dependencies project
+├── package-lock.json      # Lock file npm (otomatis, untuk konsistensi dependency)
+├── README.md              # Dokumentasi project dan petunjuk penggunaan
+└── structure.txt          # Penjelasan struktur folder/file project
