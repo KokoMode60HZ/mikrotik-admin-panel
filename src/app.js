@@ -16,6 +16,9 @@ app.get('/', (req, res) => {
     res.render('dashboard');
 });
 
+const pelangganRoute = require('./routes/pelanggan');
+app.use('/api/pelanggan', pelangganRoute);
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
