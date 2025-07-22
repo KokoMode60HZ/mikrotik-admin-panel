@@ -1,7 +1,13 @@
 <nav class="sidebar expanded">
     <ul>
         <li><a href="/dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-        <li><a href="/pengaturan"><i class="fas fa-cog"></i> Pengaturan</a></li>
+        <li class="has-submenu">
+            <a href="#" class="submenu-toggle"><i class="fas fa-cog"></i> Pengaturan <i class="fas fa-chevron-down submenu-caret"></i></a>
+            <ul class="submenu">
+                <li><a href="/pengaturan-umum"><span class="submenu-dot"></span> Pengaturan Umum</a></li>
+                <li><a href="/payment-gateway"><span class="submenu-dot"></span> Payment Gateway</a></li>
+            </ul>
+        </li>
         <li><a href="/router-nas"><i class="fas fa-server"></i> Router [ NAS ]</a></li>
         <li><a href="/data-odp-pop"><i class="fas fa-database"></i> Data ODP | POP</a></li>
         <li><a href="/profil-paket"><i class="fas fa-box"></i> Profil Paket</a></li>

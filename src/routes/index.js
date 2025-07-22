@@ -18,5 +18,7 @@ router.get("/online-payment", (req, res) => res.render("pages/online-payment"));
 router.get("/tiket-laporan", (req, res) => res.render("pages/tiket-laporan"));
 router.get("/tool-sistem", (req, res) => res.render("pages/tool-sistem"));
 router.get("/log-aplikasi", (req, res) => res.render("pages/log-aplikasi"));
+router.get("/pengaturan-umum", (req, res) => res.render("pages/pengaturan-umum"));
+router.get("/payment-gateway", (req, res) => res.render("pages/payment-gateway"));
 
 module.exports = router;
