@@ -13,14 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       const parent = btn.closest('.has-submenu');
       const isOpen = parent.classList.contains('open');
+      
       // Tutup semua submenu lain
       document.querySelectorAll('.has-submenu').forEach(function(item) {
-        item.classList.remove('open');
+        if (item !== parent) {
+          item.classList.remove('open');
+        }
       });
-      // Toggle: jika sebelumnya belum open, buka. Jika sudah open, biarkan tetap tertutup.
-      if (!isOpen) {
-        parent.classList.add('open');
-      }
+      
+      // Toggle submenu yang diklik
+      parent.classList.toggle('open');
     });
   });
 });

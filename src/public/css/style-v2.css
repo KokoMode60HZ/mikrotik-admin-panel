@@ -238,6 +238,7 @@ footer {
     border-left: 2px solid #ff9c3f;
     width: 100%;
     z-index: 1;
+    display: none;
 }
 .submenu li {
     margin: 0.1em 0;
@@ -273,6 +274,7 @@ footer {
 }
 .has-submenu.open .submenu {
     display: flex;
+    flex-direction: column;
 }
 .has-submenu.open > .submenu-toggle .submenu-caret {
     transform: rotate(180deg);
