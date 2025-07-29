@@ -1,1 +1,139 @@
-<div class="page-content"><h2>Data Tagihan</h2></div> 
+<div class="page-content">
+  <div class="page-header">
+    <h2><i class="fas fa-file-invoice"></i> Data Tagihan</h2>
+    <p>Sistem penagihan otomatis berdasarkan paket dan masa aktif pelanggan</p>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Daftar Tagihan</h3>
+      <div class="header-actions">
+        <button class="btn btn-success"><i class="fas fa-download"></i> Export</button>
+        <button class="btn btn-primary"><i class="fas fa-plus"></i> Buat Tagihan</button>
+      </div>
+    </div>
+    
+    <div class="filter-section">
+      <div class="filter-group">
+        <label>Status:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>Lunas</option>
+          <option>Belum Lunas</option>
+          <option>Jatuh Tempo</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Bulan:</label>
+        <select class="form-control">
+          <option>Juli 2025</option>
+          <option>Juni 2025</option>
+          <option>Mei 2025</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <button class="btn btn-info"><i class="fas fa-search"></i> Filter</button>
+      </div>
+    </div>
+    
+    <div class="table-responsive">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Invoice</th>
+            <th>ID Pelanggan</th>
+            <th>Nama</th>
+            <th>Paket</th>
+            <th>Jumlah</th>
+            <th>Periode</th>
+            <th>Jatuh Tempo</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>INV-2025-001</td>
+            <td>P001</td>
+            <td>Budi Santoso</td>
+            <td>Paket Basic</td>
+            <td>Rp 100.000</td>
+            <td>Juli 2025</td>
+            <td>15 Jul 2025</td>
+            <td><span class="badge badge-success">Lunas</span></td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>INV-2025-002</td>
+            <td>P002</td>
+            <td>Siti Aminah</td>
+            <td>Paket Standard</td>
+            <td>Rp 150.000</td>
+            <td>Juli 2025</td>
+            <td>10 Jul 2025</td>
+            <td><span class="badge badge-warning">Belum Lunas</span></td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>INV-2025-003</td>
+            <td>P003</td>
+            <td>Ahmad Rizki</td>
+            <td>Paket Premium</td>
+            <td>Rp 250.000</td>
+            <td>Juli 2025</td>
+            <td>20 Jul 2025</td>
+            <td><span class="badge badge-danger">Jatuh Tempo</span></td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="stats-cards">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-money-bill-wave"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">Rp 500.000</div>
+        <div class="stat-label">Total Tagihan</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">1</div>
+        <div class="stat-label">Lunas</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-clock"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">1</div>
+        <div class="stat-label">Belum Lunas</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-exclamation-triangle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">1</div>
+        <div class="stat-label">Jatuh Tempo</div>
+      </div>
+    </div>
+  </div>
+</div> 

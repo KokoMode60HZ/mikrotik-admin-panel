@@ -1,1 +1,156 @@
-<div class="page-content"><h2>Log Aplikasi</h2></div> 
+<div class="page-content">
+  <div class="page-header">
+    <h2><i class="fas fa-book"></i> Log Aplikasi</h2>
+    <p>Log aktivitas sistem dan monitoring</p>
+  </div>
+  
+  <div class="stats-cards">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-list"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">1,250</div>
+        <div class="stat-label">Total Log Hari Ini</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-user"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">45</div>
+        <div class="stat-label">Login Berhasil</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-exclamation-triangle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Error</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">8</div>
+        <div class="stat-label">Security Alert</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Log Aktivitas</h3>
+      <div class="header-actions">
+        <button class="btn btn-success"><i class="fas fa-download"></i> Export</button>
+        <button class="btn btn-danger"><i class="fas fa-trash"></i> Clear Log</button>
+      </div>
+    </div>
+    
+    <div class="filter-section">
+      <div class="filter-group">
+        <label>Tipe:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>Login</option>
+          <option>Error</option>
+          <option>Security</option>
+          <option>System</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Level:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>INFO</option>
+          <option>WARNING</option>
+          <option>ERROR</option>
+          <option>CRITICAL</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Tanggal:</label>
+        <input type="date" class="form-control" value="2025-07-10">
+      </div>
+      <div class="filter-group">
+        <button class="btn btn-info"><i class="fas fa-search"></i> Filter</button>
+      </div>
+    </div>
+    
+    <div class="log-container">
+      <div class="log-entry info">
+        <div class="log-time">10 Jul 2025 15:30:25</div>
+        <div class="log-level">INFO</div>
+        <div class="log-user">admin@ljn.com</div>
+        <div class="log-message">User login successful from IP 192.168.1.100</div>
+        <div class="log-actions">
+          <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+      
+      <div class="log-entry warning">
+        <div class="log-time">10 Jul 2025 15:25:10</div>
+        <div class="log-level">WARNING</div>
+        <div class="log-user">system</div>
+        <div class="log-message">Router backup connection timeout</div>
+        <div class="log-actions">
+          <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+      
+      <div class="log-entry error">
+        <div class="log-time">10 Jul 2025 15:20:45</div>
+        <div class="log-level">ERROR</div>
+        <div class="log-user">payment_gateway</div>
+        <div class="log-message">Payment gateway connection failed: Connection timeout</div>
+        <div class="log-actions">
+          <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+      
+      <div class="log-entry security">
+        <div class="log-time">10 Jul 2025 15:15:30</div>
+        <div class="log-level">SECURITY</div>
+        <div class="log-user">unknown</div>
+        <div class="log-message">Failed login attempt from IP 203.194.112.1</div>
+        <div class="log-actions">
+          <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+      
+      <div class="log-entry info">
+        <div class="log-time">10 Jul 2025 15:10:15</div>
+        <div class="log-level">INFO</div>
+        <div class="log-user">system</div>
+        <div class="log-message">Backup database completed successfully</div>
+        <div class="log-actions">
+          <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Statistik Log</h3>
+    </div>
+    <div class="log-stats">
+      <div class="stat-item">
+        <h4>Log per Jam</h4>
+        <div class="stat-chart">
+          <div class="chart-bar" style="height: 60%; background: #007bff;"></div>
+          <div class="chart-bar" style="height: 80%; background: #28a745;"></div>
+          <div class="chart-bar" style="height: 40%; background: #ffc107;"></div>
+          <div class="chart-bar" style="height: 90%; background: #dc3545;"></div>
+          <div class="chart-bar" style="height: 70%; background: #6f42c1;"></div>
+          <div class="chart-bar" style="height: 50%; background: #fd7e14;"></div>
+        </div>
+        <div class="chart-labels">
+          <span>10:00</span>
+          <span>11:00</span>
+          <span>12:00</span>
+          <span>13:00</span>
+          <span>14:00</span>
+          <span>15:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

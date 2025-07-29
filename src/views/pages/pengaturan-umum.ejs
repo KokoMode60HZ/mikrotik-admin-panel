@@ -1,1 +1,141 @@
-<div class="page-content"><h2>Pengaturan Umum</h2></div> 
+<div class="page-content">
+  <div class="page-header">
+    <h2><i class="fas fa-cog"></i> Pengaturan Umum</h2>
+    <p>Konfigurasi umum sistem</p>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Pengaturan Sistem</h3>
+      <div class="header-actions">
+        <button class="btn btn-success"><i class="fas fa-save"></i> Simpan</button>
+        <button class="btn btn-secondary"><i class="fas fa-undo"></i> Reset</button>
+      </div>
+    </div>
+    
+    <div class="settings-grid">
+      <div class="settings-section">
+        <h4>Informasi Perusahaan</h4>
+        <div class="form-group">
+          <label>Nama Perusahaan:</label>
+          <input type="text" class="form-control" value="LJN Internet Service" placeholder="Masukkan nama perusahaan">
+        </div>
+        <div class="form-group">
+          <label>Alamat:</label>
+          <textarea class="form-control" rows="3" placeholder="Masukkan alamat lengkap">Jl. Merdeka No. 123, Jakarta</textarea>
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" class="form-control" value="admin@ljn.com" placeholder="Masukkan email">
+        </div>
+        <div class="form-group">
+          <label>Telepon:</label>
+          <input type="text" class="form-control" value="021-1234567" placeholder="Masukkan nomor telepon">
+        </div>
+      </div>
+      
+      <div class="settings-section">
+        <h4>Pengaturan Aplikasi</h4>
+        <div class="form-group">
+          <label>Nama Aplikasi:</label>
+          <input type="text" class="form-control" value="Mikrotik Admin Panel" placeholder="Masukkan nama aplikasi">
+        </div>
+        <div class="form-group">
+          <label>Versi:</label>
+          <input type="text" class="form-control" value="1.0.0" placeholder="Masukkan versi">
+        </div>
+        <div class="form-group">
+          <label>Timezone:</label>
+          <select class="form-control">
+            <option>Asia/Jakarta (WIB)</option>
+            <option>Asia/Makassar (WITA)</option>
+            <option>Asia/Jayapura (WIT)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Bahasa:</label>
+          <select class="form-control">
+            <option>Indonesia</option>
+            <option>English</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="settings-section">
+        <h4>Pengaturan Keamanan</h4>
+        <div class="form-group">
+          <label>Session Timeout (menit):</label>
+          <input type="number" class="form-control" value="30" min="5" max="1440">
+        </div>
+        <div class="form-group">
+          <label>Max Login Attempts:</label>
+          <input type="number" class="form-control" value="5" min="3" max="10">
+        </div>
+        <div class="form-group">
+          <label>Password Policy:</label>
+          <select class="form-control">
+            <option>Minimal 8 karakter</option>
+            <option>Minimal 10 karakter</option>
+            <option>Minimal 12 karakter</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Two Factor Auth:</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="2fa" checked>
+            <label for="2fa">Aktifkan 2FA</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="settings-section">
+        <h4>Pengaturan Notifikasi</h4>
+        <div class="form-group">
+          <label>Email Notifications:</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="email_notif" checked>
+            <label for="email_notif">Aktifkan notifikasi email</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>SMS Notifications:</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="sms_notif">
+            <label for="sms_notif">Aktifkan notifikasi SMS</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Webhook URL:</label>
+          <input type="url" class="form-control" placeholder="https://your-webhook-url.com">
+        </div>
+        <div class="form-group">
+          <label>Notification Types:</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="notif_login" checked>
+            <label for="notif_login">Login notifications</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="notif_payment" checked>
+            <label for="notif_payment">Payment notifications</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="notif_system">
+            <label for="notif_system">System alerts</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Backup & Restore</h3>
+    </div>
+    <div class="backup-actions">
+      <button class="btn btn-primary"><i class="fas fa-download"></i> Backup Database</button>
+      <button class="btn btn-info"><i class="fas fa-upload"></i> Restore Database</button>
+      <button class="btn btn-success"><i class="fas fa-file-archive"></i> Export Settings</button>
+      <button class="btn btn-warning"><i class="fas fa-file-import"></i> Import Settings</button>
+    </div>
+  </div>
+</div> 

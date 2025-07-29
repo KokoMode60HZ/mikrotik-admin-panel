@@ -1,1 +1,170 @@
-<div class="page-content"><h2>Tiket Laporan</h2></div> 
+<div class="page-content">
+  <div class="page-header">
+    <h2><i class="fas fa-clipboard-list"></i> Tiket Laporan</h2>
+    <p>Sistem support ticket untuk pelanggan</p>
+  </div>
+  
+  <div class="stats-cards">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-ticket-alt"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">15</div>
+        <div class="stat-label">Total Tiket</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-clock"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">8</div>
+        <div class="stat-label">Menunggu</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-cog"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">5</div>
+        <div class="stat-label">Diproses</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">2</div>
+        <div class="stat-label">Selesai</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Daftar Tiket</h3>
+      <div class="header-actions">
+        <button class="btn btn-success"><i class="fas fa-download"></i> Export</button>
+        <button class="btn btn-primary"><i class="fas fa-plus"></i> Buat Tiket</button>
+      </div>
+    </div>
+    
+    <div class="filter-section">
+      <div class="filter-group">
+        <label>Status:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>Menunggu</option>
+          <option>Diproses</option>
+          <option>Selesai</option>
+          <option>Ditutup</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Prioritas:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>Rendah</option>
+          <option>Sedang</option>
+          <option>Tinggi</option>
+          <option>Urgent</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <button class="btn btn-info"><i class="fas fa-search"></i> Filter</button>
+      </div>
+    </div>
+    
+    <div class="table-responsive">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>ID Tiket</th>
+            <th>Pelanggan</th>
+            <th>Judul</th>
+            <th>Kategori</th>
+            <th>Prioritas</th>
+            <th>Status</th>
+            <th>Dibuat</th>
+            <th>Terakhir Update</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#TK001</td>
+            <td>Budi Santoso</td>
+            <td>Internet Lambat</td>
+            <td>Teknis</td>
+            <td><span class="badge badge-warning">Sedang</span></td>
+            <td><span class="badge badge-warning">Menunggu</span></td>
+            <td>10 Jul 2025</td>
+            <td>10 Jul 2025</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-success"><i class="fas fa-reply"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>#TK002</td>
+            <td>Siti Aminah</td>
+            <td>Gagal Login</td>
+            <td>Akun</td>
+            <td><span class="badge badge-danger">Urgent</span></td>
+            <td><span class="badge badge-info">Diproses</span></td>
+            <td>09 Jul 2025</td>
+            <td>10 Jul 2025</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-success"><i class="fas fa-reply"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>#TK003</td>
+            <td>Ahmad Rizki</td>
+            <td>Pembayaran Gagal</td>
+            <td>Billing</td>
+            <td><span class="badge badge-success">Rendah</span></td>
+            <td><span class="badge badge-success">Selesai</span></td>
+            <td>08 Jul 2025</td>
+            <td>09 Jul 2025</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-success"><i class="fas fa-reply"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Kategori Tiket</h3>
+    </div>
+    <div class="ticket-categories">
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-wifi"></i></div>
+        <h4>Teknis</h4>
+        <p>Masalah koneksi, kecepatan, dll</p>
+        <span class="count-badge">8 Tiket</span>
+      </div>
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-user"></i></div>
+        <h4>Akun</h4>
+        <p>Login, password, registrasi</p>
+        <span class="count-badge">3 Tiket</span>
+      </div>
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-money-bill"></i></div>
+        <h4>Billing</h4>
+        <p>Pembayaran, tagihan, voucher</p>
+        <span class="count-badge">2 Tiket</span>
+      </div>
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-question-circle"></i></div>
+        <h4>Lainnya</h4>
+        <p>Pertanyaan umum, feedback</p>
+        <span class="count-badge">2 Tiket</span>
+      </div>
+    </div>
+  </div>
+</div> 

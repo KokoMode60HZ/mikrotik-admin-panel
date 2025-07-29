@@ -1,1 +1,149 @@
-<div class="page-content"><h2>Payment Gateway</h2></div> 
+<div class="page-content">
+  <div class="page-header">
+    <h2><i class="fas fa-credit-card"></i> Payment Gateway</h2>
+    <p>Konfigurasi integrasi payment gateway untuk sistem pembayaran online</p>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Konfigurasi Payment Gateway</h3>
+      <div class="header-actions">
+        <button class="btn btn-success"><i class="fas fa-save"></i> Simpan</button>
+        <button class="btn btn-primary"><i class="fas fa-test"></i> Test Koneksi</button>
+      </div>
+    </div>
+    
+    <div class="gateway-config">
+      <div class="config-section">
+        <h4>Midtrans Configuration</h4>
+        <div class="form-group">
+          <label>Merchant ID:</label>
+          <input type="text" class="form-control" value="G123456789" placeholder="Masukkan Merchant ID">
+        </div>
+        <div class="form-group">
+          <label>Client Key:</label>
+          <input type="text" class="form-control" value="SB-Mid-client-123456789" placeholder="Masukkan Client Key">
+        </div>
+        <div class="form-group">
+          <label>Server Key:</label>
+          <input type="password" class="form-control" value="••••••••••••••••" placeholder="Masukkan Server Key">
+        </div>
+        <div class="form-group">
+          <label>Environment:</label>
+          <select class="form-control">
+            <option>Sandbox (Testing)</option>
+            <option>Production</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Status:</label>
+          <span class="status-badge active">Aktif</span>
+        </div>
+      </div>
+      
+      <div class="config-section">
+        <h4>Xendit Configuration</h4>
+        <div class="form-group">
+          <label>API Key:</label>
+          <input type="password" class="form-control" value="••••••••••••••••" placeholder="Masukkan API Key">
+        </div>
+        <div class="form-group">
+          <label>Callback URL:</label>
+          <input type="text" class="form-control" value="https://yourdomain.com/callback/xendit" placeholder="Masukkan Callback URL">
+        </div>
+        <div class="form-group">
+          <label>Environment:</label>
+          <select class="form-control">
+            <option>Sandbox (Testing)</option>
+            <option>Production</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Status:</label>
+          <span class="status-badge inactive">Nonaktif</span>
+        </div>
+      </div>
+      
+      <div class="config-section">
+        <h4>Tripay Configuration</h4>
+        <div class="form-group">
+          <label>Merchant Code:</label>
+          <input type="text" class="form-control" value="T123456" placeholder="Masukkan Merchant Code">
+        </div>
+        <div class="form-group">
+          <label>API Key:</label>
+          <input type="password" class="form-control" value="••••••••••••••••" placeholder="Masukkan API Key">
+        </div>
+        <div class="form-group">
+          <label>Private Key:</label>
+          <textarea class="form-control" rows="4" placeholder="Masukkan Private Key">-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC...
+-----END PRIVATE KEY-----</textarea>
+        </div>
+        <div class="form-group">
+          <label>Environment:</label>
+          <select class="form-control">
+            <option>Sandbox (Testing)</option>
+            <option>Production</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Status:</label>
+          <span class="status-badge active">Aktif</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Log Transaksi</h3>
+    </div>
+    <div class="table-responsive">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Tanggal</th>
+            <th>Gateway</th>
+            <th>Event</th>
+            <th>Status</th>
+            <th>Message</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10 Jul 2025 14:30</td>
+            <td>Midtrans</td>
+            <td>Payment Success</td>
+            <td><span class="badge badge-success">Success</span></td>
+            <td>Payment completed successfully</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>10 Jul 2025 13:45</td>
+            <td>Tripay</td>
+            <td>Payment Pending</td>
+            <td><span class="badge badge-warning">Pending</span></td>
+            <td>Waiting for payment confirmation</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>10 Jul 2025 12:15</td>
+            <td>Xendit</td>
+            <td>Payment Failed</td>
+            <td><span class="badge badge-danger">Failed</span></td>
+            <td>Insufficient balance</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div> 

@@ -1,1 +1,165 @@
-<div class="page-content"><h2>Kartu Voucher</h2></div> 
+<div class="page-content">
+  <div class="page-header">
+    <h2><i class="fas fa-ticket-alt"></i> Kartu Voucher</h2>
+    <p>Sistem voucher internet untuk akses hotspot</p>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Daftar Voucher</h3>
+      <div class="header-actions">
+        <button class="btn btn-success"><i class="fas fa-print"></i> Print Voucher</button>
+        <button class="btn btn-primary"><i class="fas fa-plus"></i> Buat Voucher</button>
+      </div>
+    </div>
+    
+    <div class="filter-section">
+      <div class="filter-group">
+        <label>Status:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>Aktif</option>
+          <option>Terpakai</option>
+          <option>Expired</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Paket:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>1 Jam</option>
+          <option>2 Jam</option>
+          <option>1 Hari</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <button class="btn btn-info"><i class="fas fa-search"></i> Filter</button>
+      </div>
+    </div>
+    
+    <div class="table-responsive">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Kode Voucher</th>
+            <th>Paket</th>
+            <th>Durasi</th>
+            <th>Harga</th>
+            <th>Status</th>
+            <th>Dibuat</th>
+            <th>Digunakan</th>
+            <th>Expired</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>VC001</strong></td>
+            <td>Paket 1 Jam</td>
+            <td>1 Jam</td>
+            <td>Rp 5.000</td>
+            <td><span class="badge badge-success">Aktif</span></td>
+            <td>10 Jul 2025</td>
+            <td>-</td>
+            <td>11 Jul 2025</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>VC002</strong></td>
+            <td>Paket 2 Jam</td>
+            <td>2 Jam</td>
+            <td>Rp 8.000</td>
+            <td><span class="badge badge-warning">Terpakai</span></td>
+            <td>09 Jul 2025</td>
+            <td>10 Jul 2025</td>
+            <td>11 Jul 2025</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>VC003</strong></td>
+            <td>Paket 1 Hari</td>
+            <td>24 Jam</td>
+            <td>Rp 15.000</td>
+            <td><span class="badge badge-danger">Expired</span></td>
+            <td>08 Jul 2025</td>
+            <td>-</td>
+            <td>09 Jul 2025</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="stats-cards">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-ticket-alt"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">150</div>
+        <div class="stat-label">Total Voucher</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">120</div>
+        <div class="stat-label">Aktif</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-times-circle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">25</div>
+        <div class="stat-label">Terpakai</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-exclamation-triangle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">5</div>
+        <div class="stat-label">Expired</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Paket Voucher</h3>
+    </div>
+    <div class="voucher-packages">
+      <div class="package-card">
+        <h4>Paket 1 Jam</h4>
+        <p class="price">Rp 5.000</p>
+        <p>Durasi: 1 Jam</p>
+        <p>Kecepatan: 10 Mbps</p>
+        <button class="btn btn-primary">Buat Voucher</button>
+      </div>
+      <div class="package-card">
+        <h4>Paket 2 Jam</h4>
+        <p class="price">Rp 8.000</p>
+        <p>Durasi: 2 Jam</p>
+        <p>Kecepatan: 10 Mbps</p>
+        <button class="btn btn-primary">Buat Voucher</button>
+      </div>
+      <div class="package-card">
+        <h4>Paket 1 Hari</h4>
+        <p class="price">Rp 15.000</p>
+        <p>Durasi: 24 Jam</p>
+        <p>Kecepatan: 10 Mbps</p>
+        <button class="btn btn-primary">Buat Voucher</button>
+      </div>
+    </div>
+  </div>
+</div> 

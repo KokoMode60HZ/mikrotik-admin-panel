@@ -1,1 +1,149 @@
-<div class="page-content"><h2>Data ODP | POP</h2></div> 
+<div class="page-content">
+  <div class="page-header">
+    <h2><i class="fas fa-database"></i> Data ODP | POP</h2>
+    <p>Manajemen infrastruktur fiber optic dan node jaringan</p>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Daftar ODP/POP</h3>
+      <div class="header-actions">
+        <button class="btn btn-success"><i class="fas fa-download"></i> Export</button>
+        <button class="btn btn-primary"><i class="fas fa-plus"></i> Tambah ODP</button>
+      </div>
+    </div>
+    
+    <div class="filter-section">
+      <div class="filter-group">
+        <label>Kategori:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>ODP</option>
+          <option>POP</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Status:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>Aktif</option>
+          <option>Maintenance</option>
+          <option>Rusak</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <button class="btn btn-info"><i class="fas fa-search"></i> Filter</button>
+      </div>
+    </div>
+    
+    <div class="table-responsive">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nama ODP/POP</th>
+            <th>Kategori</th>
+            <th>Lokasi</th>
+            <th>Kapasitas</th>
+            <th>Terpakai</th>
+            <th>Status</th>
+            <th>Koordinat</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>ODP-001</td>
+            <td>ODP</td>
+            <td>Jl. Merdeka No. 123</td>
+            <td>16 Port</td>
+            <td>12 Port</td>
+            <td><span class="badge badge-success">Aktif</span></td>
+            <td>-6.2088, 106.8456</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>POP-001</td>
+            <td>POP</td>
+            <td>Jl. Sudirman No. 45</td>
+            <td>32 Port</td>
+            <td>28 Port</td>
+            <td><span class="badge badge-success">Aktif</span></td>
+            <td>-6.2088, 106.8456</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>ODP-002</td>
+            <td>ODP</td>
+            <td>Jl. Gatot Subroto No. 67</td>
+            <td>16 Port</td>
+            <td>8 Port</td>
+            <td><span class="badge badge-warning">Maintenance</span></td>
+            <td>-6.2088, 106.8456</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="stats-cards">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-database"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">25</div>
+        <div class="stat-label">Total ODP/POP</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">20</div>
+        <div class="stat-label">Aktif</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-tools"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Maintenance</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-exclamation-triangle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">2</div>
+        <div class="stat-label">Rusak</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Peta Infrastruktur</h3>
+    </div>
+    <div class="map-placeholder">
+      <div class="map-content">
+        <i class="fas fa-map-marked-alt"></i>
+        <h4>Peta ODP/POP</h4>
+        <p>Peta lokasi infrastruktur fiber optic akan ditampilkan di sini</p>
+        <button class="btn btn-primary">Lihat Peta</button>
+      </div>
+    </div>
+  </div>
+</div> 

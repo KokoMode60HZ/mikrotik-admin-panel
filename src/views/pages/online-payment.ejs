@@ -1,1 +1,165 @@
-<div class="page-content"><h2>Online Payment</h2></div> 
+<div class="page-content">
+  <div class="page-header">
+    <h2><i class="fas fa-globe"></i> Online Payment</h2>
+    <p>Sistem pembayaran online terintegrasi dengan payment gateway</p>
+  </div>
+  
+  <div class="stats-cards">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-credit-card"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">Rp 1.500.000</div>
+        <div class="stat-label">Total Pembayaran Hari Ini</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">25</div>
+        <div class="stat-label">Pembayaran Sukses</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-clock"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Menunggu Pembayaran</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-times-circle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">2</div>
+        <div class="stat-label">Pembayaran Gagal</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Riwayat Pembayaran</h3>
+      <div class="header-actions">
+        <button class="btn btn-success"><i class="fas fa-download"></i> Export</button>
+        <button class="btn btn-primary"><i class="fas fa-plus"></i> Buat Pembayaran</button>
+      </div>
+    </div>
+    
+    <div class="filter-section">
+      <div class="filter-group">
+        <label>Status:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>Sukses</option>
+          <option>Menunggu</option>
+          <option>Gagal</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Metode:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>Bank Transfer</option>
+          <option>E-Wallet</option>
+          <option>QRIS</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <button class="btn btn-info"><i class="fas fa-search"></i> Filter</button>
+      </div>
+    </div>
+    
+    <div class="table-responsive">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Invoice</th>
+            <th>Pelanggan</th>
+            <th>Jumlah</th>
+            <th>Metode</th>
+            <th>Status</th>
+            <th>Tanggal</th>
+            <th>Referensi</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>INV-2025-001</td>
+            <td>Budi Santoso</td>
+            <td>Rp 100.000</td>
+            <td>Bank Transfer</td>
+            <td><span class="badge badge-success">Sukses</span></td>
+            <td>10 Jul 2025</td>
+            <td>TRX001</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-success"><i class="fas fa-print"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>INV-2025-002</td>
+            <td>Siti Aminah</td>
+            <td>Rp 150.000</td>
+            <td>E-Wallet</td>
+            <td><span class="badge badge-warning">Menunggu</span></td>
+            <td>10 Jul 2025</td>
+            <td>TRX002</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-clock"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>INV-2025-003</td>
+            <td>Ahmad Rizki</td>
+            <td>Rp 250.000</td>
+            <td>QRIS</td>
+            <td><span class="badge badge-danger">Gagal</span></td>
+            <td>09 Jul 2025</td>
+            <td>TRX003</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-exclamation"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Metode Pembayaran</h3>
+    </div>
+    <div class="payment-methods">
+      <div class="method-card">
+        <div class="method-icon"><i class="fas fa-university"></i></div>
+        <h4>Bank Transfer</h4>
+        <p>Transfer ke rekening bank</p>
+        <span class="status-badge active">Aktif</span>
+      </div>
+      <div class="method-card">
+        <div class="method-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h4>E-Wallet</h4>
+        <p>GoPay, OVO, DANA</p>
+        <span class="status-badge active">Aktif</span>
+      </div>
+      <div class="method-card">
+        <div class="method-icon"><i class="fas fa-qrcode"></i></div>
+        <h4>QRIS</h4>
+        <p>Scan QR Code</p>
+        <span class="status-badge active">Aktif</span>
+      </div>
+      <div class="method-card">
+        <div class="method-icon"><i class="fas fa-credit-card"></i></div>
+        <h4>Credit Card</h4>
+        <p>Visa, Mastercard</p>
+        <span class="status-badge inactive">Nonaktif</span>
+      </div>
+    </div>
+  </div>
+</div> 

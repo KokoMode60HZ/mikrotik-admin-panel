@@ -1,1 +1,58 @@
-<div class="page-content"><h2>Router [ NAS ]</h2></div> 
+<div class="page-content">
+  <div class="page-header">
+    <h2><i class="fas fa-server"></i> Router [ NAS ]</h2>
+    <p>Manajemen router Mikrotik untuk akses Radius backend / API router</p>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Daftar Router</h3>
+      <button class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Router</button>
+    </div>
+    
+    <div class="table-responsive">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nama Router</th>
+            <th>IP Address</th>
+            <th>Port</th>
+            <th>Secret API</th>
+            <th>Status</th>
+            <th>Pelanggan Aktif</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Router Utama</td>
+            <td>192.168.1.1</td>
+            <td>8728</td>
+            <td>••••••••</td>
+            <td><span class="badge badge-success">Online</span></td>
+            <td>45</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Router Backup</td>
+            <td>192.168.1.2</td>
+            <td>8728</td>
+            <td>••••••••</td>
+            <td><span class="badge badge-warning">Offline</span></td>
+            <td>0</td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-edit"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div> 
