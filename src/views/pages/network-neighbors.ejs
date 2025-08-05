@@ -1,0 +1,197 @@
+<div class="page-content">
+  <div class="page-header">
+    <h2><i class="fas fa-network-wired"></i> Network Neighbors</h2>
+    <p>Monitor perangkat yang terhubung ke jaringan</p>
+  </div>
+  
+  <div class="stats-cards">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-desktop"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">28</div>
+        <div class="stat-label">Total Devices</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-wifi"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">15</div>
+        <div class="stat-label">WiFi Devices</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-ethernet"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">13</div>
+        <div class="stat-label">Wired Devices</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-exclamation-triangle"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">2</div>
+        <div class="stat-label">Unknown Devices</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Daftar Perangkat</h3>
+      <div class="header-actions">
+        <button class="btn btn-success"><i class="fas fa-download"></i> Export</button>
+        <button class="btn btn-primary"><i class="fas fa-sync"></i> Refresh</button>
+      </div>
+    </div>
+    
+    <div class="filter-section">
+      <div class="filter-group">
+        <label>Router:</label>
+        <select class="form-control">
+          <option>Semua Router</option>
+          <option>Router-001</option>
+          <option>Router-002</option>
+          <option>Router-003</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Tipe:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>WiFi</option>
+          <option>Wired</option>
+          <option>Unknown</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Status:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>Online</option>
+          <option>Offline</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <button class="btn btn-info"><i class="fas fa-search"></i> Filter</button>
+      </div>
+    </div>
+    
+    <div class="table-responsive">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nama Perangkat</th>
+            <th>IP Address</th>
+            <th>MAC Address</th>
+            <th>Router</th>
+            <th>Tipe</th>
+            <th>Vendor</th>
+            <th>Terakhir Terlihat</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Budi's iPhone</td>
+            <td>192.168.1.100</td>
+            <td>AA:BB:CC:DD:EE:FF</td>
+            <td>Router-001</td>
+            <td><span class="badge badge-info">WiFi</span></td>
+            <td>Apple Inc.</td>
+            <td>2 menit lalu</td>
+            <td><span class="badge badge-success">Online</span></td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-ban"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Siti's Laptop</td>
+            <td>192.168.1.101</td>
+            <td>11:22:33:44:55:66</td>
+            <td>Router-001</td>
+            <td><span class="badge badge-primary">Wired</span></td>
+            <td>Dell Inc.</td>
+            <td>5 menit lalu</td>
+            <td><span class="badge badge-success">Online</span></td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-ban"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Unknown Device</td>
+            <td>192.168.1.102</td>
+            <td>AA:11:BB:22:CC:33</td>
+            <td>Router-001</td>
+            <td><span class="badge badge-warning">Unknown</span></td>
+            <td>Unknown</td>
+            <td>1 jam lalu</td>
+            <td><span class="badge badge-danger">Offline</span></td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-ban"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Topologi Jaringan</h3>
+    </div>
+    <div class="network-topology">
+      <div class="topology-item">
+        <div class="router-node">
+          <i class="fas fa-server"></i>
+          <h4>Router-001</h4>
+          <p>192.168.1.1</p>
+          <span class="device-count">12 Devices</span>
+        </div>
+        <div class="device-list">
+          <div class="device-item online">
+            <i class="fas fa-mobile-alt"></i>
+            <span>iPhone (192.168.1.100)</span>
+          </div>
+          <div class="device-item online">
+            <i class="fas fa-laptop"></i>
+            <span>Laptop (192.168.1.101)</span>
+          </div>
+          <div class="device-item offline">
+            <i class="fas fa-question-circle"></i>
+            <span>Unknown (192.168.1.102)</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="topology-item">
+        <div class="router-node">
+          <i class="fas fa-server"></i>
+          <h4>Router-002</h4>
+          <p>192.168.2.1</p>
+          <span class="device-count">8 Devices</span>
+        </div>
+        <div class="device-list">
+          <div class="device-item online">
+            <i class="fas fa-tv"></i>
+            <span>Smart TV (192.168.2.100)</span>
+          </div>
+          <div class="device-item online">
+            <i class="fas fa-tablet-alt"></i>
+            <span>Tablet (192.168.2.101)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

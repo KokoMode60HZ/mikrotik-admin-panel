@@ -1349,6 +1349,168 @@ textarea.form-control {
     color: white;
 }
 
+/* Settings Overview */
+.settings-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.settings-card {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.settings-card:hover {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.settings-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.settings-card h4 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.settings-card p {
+    margin: 0 0 1rem 0;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.settings-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* System Status */
+.system-status {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #28a745;
+}
+
+.status-item i {
+    color: #28a745;
+    font-size: 1.2rem;
+}
+
+.status-item span {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Network Topology */
+.network-topology {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.topology-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+}
+
+.router-node {
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.router-node i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.router-node h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+}
+
+.router-node p {
+    margin: 0 0 0.5rem 0;
+    opacity: 0.9;
+}
+
+.device-count {
+    background: rgba(255,255,255,0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.device-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.device-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 6px;
+    border-left: 4px solid #28a745;
+    font-size: 0.9rem;
+}
+
+.device-item.offline {
+    border-left-color: #dc3545;
+    opacity: 0.7;
+}
+
+.device-item i {
+    color: #007bff;
+    width: 20px;
+}
+
+.device-item.offline i {
+    color: #dc3545;
+}
+
+/* Badge Primary */
+.badge-primary {
+    background: #007bff;
+    color: white;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .stats-cards {
@@ -1412,6 +1574,23 @@ textarea.form-control {
     
     .backup-actions {
         flex-direction: column;
+    }
+
+    .settings-overview {
+        grid-template-columns: 1fr;
+    }
+    
+    .system-status {
+        grid-template-columns: 1fr;
+    }
+    
+    .settings-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: stretch;
+    }
+    .network-topology {
+        grid-template-columns: 1fr;
     }
 }
 

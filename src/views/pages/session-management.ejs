@@ -1,0 +1,188 @@
+<div class="page-content">
+  <div class="page-header">
+    <h2><i class="fas fa-users"></i> Session Management</h2>
+    <p>Kelola sesi aktif pelanggan di router Mikrotik</p>
+  </div>
+  
+  <div class="stats-cards">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-wifi"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">45</div>
+        <div class="stat-label">Sesi Aktif</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-server"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Router Aktif</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">2.5 GB</div>
+        <div class="stat-label">Total Traffic</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-clock"></i></div>
+      <div class="stat-content">
+        <div class="stat-value">8h 30m</div>
+        <div class="stat-label">Avg Session Time</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Sesi Aktif</h3>
+      <div class="header-actions">
+        <button class="btn btn-success"><i class="fas fa-download"></i> Export</button>
+        <button class="btn btn-danger"><i class="fas fa-stop"></i> Disconnect All</button>
+      </div>
+    </div>
+    
+    <div class="filter-section">
+      <div class="filter-group">
+        <label>Router:</label>
+        <select class="form-control">
+          <option>Semua Router</option>
+          <option>Router-001</option>
+          <option>Router-002</option>
+          <option>Router-003</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Status:</label>
+        <select class="form-control">
+          <option>Semua</option>
+          <option>Aktif</option>
+          <option>Idle</option>
+          <option>Disconnected</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <button class="btn btn-info"><i class="fas fa-search"></i> Filter</button>
+      </div>
+    </div>
+    
+    <div class="table-responsive">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>ID Sesi</th>
+            <th>Pelanggan</th>
+            <th>Router</th>
+            <th>IP Address</th>
+            <th>MAC Address</th>
+            <th>Mulai</th>
+            <th>Durasi</th>
+            <th>Upload</th>
+            <th>Download</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SES001</td>
+            <td>Budi Santoso</td>
+            <td>Router-001</td>
+            <td>192.168.1.100</td>
+            <td>AA:BB:CC:DD:EE:FF</td>
+            <td>08:30</td>
+            <td>2h 15m</td>
+            <td>150 MB</td>
+            <td>2.1 GB</td>
+            <td><span class="badge badge-success">Aktif</span></td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-pause"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-stop"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>SES002</td>
+            <td>Siti Aminah</td>
+            <td>Router-001</td>
+            <td>192.168.1.101</td>
+            <td>11:22:33:44:55:66</td>
+            <td>09:15</td>
+            <td>1h 45m</td>
+            <td>75 MB</td>
+            <td>850 MB</td>
+            <td><span class="badge badge-warning">Idle</span></td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-pause"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-stop"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>SES003</td>
+            <td>Ahmad Rizki</td>
+            <td>Router-002</td>
+            <td>192.168.2.100</td>
+            <td>AA:11:BB:22:CC:33</td>
+            <td>07:45</td>
+            <td>4h 30m</td>
+            <td>300 MB</td>
+            <td>3.2 GB</td>
+            <td><span class="badge badge-success">Aktif</span></td>
+            <td>
+              <button class="btn btn-sm btn-info"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-sm btn-warning"><i class="fas fa-pause"></i></button>
+              <button class="btn btn-sm btn-danger"><i class="fas fa-stop"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <div class="section-header">
+      <h3>Riwayat Sesi</h3>
+    </div>
+    <div class="table-responsive">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>ID Sesi</th>
+            <th>Pelanggan</th>
+            <th>Router</th>
+            <th>Mulai</th>
+            <th>Selesai</th>
+            <th>Durasi</th>
+            <th>Total Traffic</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SES001</td>
+            <td>Budi Santoso</td>
+            <td>Router-001</td>
+            <td>10 Jul 2025 08:30</td>
+            <td>10 Jul 2025 10:45</td>
+            <td>2h 15m</td>
+            <td>2.25 GB</td>
+            <td><span class="badge badge-light">Selesai</span></td>
+          </tr>
+          <tr>
+            <td>SES002</td>
+            <td>Siti Aminah</td>
+            <td>Router-001</td>
+            <td>09 Jul 2025 14:20</td>
+            <td>09 Jul 2025 18:30</td>
+            <td>4h 10m</td>
+            <td>1.8 GB</td>
+            <td><span class="badge badge-light">Selesai</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div> 

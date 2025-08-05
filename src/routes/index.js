@@ -21,4 +21,14 @@ router.get("/log-aplikasi", (req, res) => res.render("pages/log-aplikasi"));
 router.get("/pengaturan-umum", (req, res) => res.render("pages/pengaturan-umum"));
 router.get("/payment-gateway", (req, res) => res.render("pages/payment-gateway"));
 
+// Route untuk halaman tambahan berdasarkan database schema
+router.get("/session-management", (req, res) => res.render("pages/session-management"));
+router.get("/network-neighbors", (req, res) => res.render("pages/network-neighbors"));
+
+// Route untuk logout (redirect ke dashboard untuk sementara)
+router.get("/logout", (req, res) => {
+    // TODO: Implementasi logout yang sebenarnya
+    res.redirect("/dashboard");
+});
+
 module.exports = router;
